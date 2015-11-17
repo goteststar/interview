@@ -56,13 +56,13 @@ project: `['key']` is the project name as catalog title.
 * Candidates are expected to describe what happened to below operation on Linux or Cygwin(Linux environment simulator) to get a warm-up on this problem first.
 
 > [mawu.NANL-MAWU] ➤ curl -D- -b ../cookies/cache-2015-0822.maxwu  -X POST -H "Content-Type: application/json" --data  '{ "jql":"reporter in (zhangsan, lisi, wangwu, maliu) AND created >= 2015-08-15 AND created <2015-08-22 AND type = Bug","maxResults":10000,"fields":["id","key"]}' "http://jira.calix.local/rest/api/2/search"  |grep '"total":[0-9]*' -o |tr ":" " " |awk '{print "Total"=$2,($2>=15)? "Yes": "No" }'
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-100  6997    0  6787  100   210   5414    167  0:00:01  0:00:01 --:--:--  5455
-42 Yes
 
-[2015-08-23 12:44.25]  ~/devel/GoJira/4interview
-[mawu.NANL-MAWU] ➤
+> % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+>                                  Dload  Upload   Total   Spent    Left  Speed
+> 100  6997    0  6787  100   210   5414    167  0:00:01  0:00:01 --:--:--  5455  42 Yes
+
+> [2015-08-23 12:44.25]  ~/devel/GoJira/4interview
+> [mawu.NANL-MAWU] ➤
 
 * Given a small training set, the accurancy is expected to be higher than 60%.
 * Candidates can directly pick up default algorithm in nltk or any other official Python package on PyPi service.
